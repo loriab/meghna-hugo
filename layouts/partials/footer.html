@@ -8,7 +8,7 @@
 				<div class="social-icon">
 					<ul class="list-inline">
 						{{ range .Site.Params.footer.socialIcon }}
-						<li><a href="#"><i class="{{ .icon }}"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="{{ .icon }}"></i></a></li>
 						{{ end }}
 					</ul>
 				</div>
@@ -16,7 +16,7 @@
 				{{"<!-- copyright -->" | safeHTML}}
 				<div class="copyright text-center">
 					<a href="{{ .Site.BaseURL | absURL }}">
-						<img src="{{ .Site.Params.logo | absURL }}" alt="Meghna" /> 
+						<img src="{{ .Site.Params.logo | absURL }}" width="{{ .Site.Params.logo_width }}" alt="Meghna" />
 					</a>
 					<br>
 

@@ -574,12 +574,12 @@ a:hover {
   color: #44689d;
 }
 
-.navbar-toggle {
+.navbar-toggler {
   border: 1px solid #fff;
   border-radius: 0;
 }
 
-.navbar-toggle span {
+.navbar-toggler span {
   background: #fff;
 }
 

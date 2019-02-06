@@ -2,14 +2,18 @@
 {{"<!-- Start Pricing section -->" | safeHTML}}
 <section id="pricing" class="pricing section">
     <div class="container">
-        <div class="row">
-
-            {{"<!-- section title -->" | safeHTML}}
-            <div class="title text-center wow fadeInDown" data-wow-duration="500ms">
-                <h2>{{ with .Site.Data.pricing.heading }} {{ . }} {{ end }}<span class="color"> {{ with .Site.Data.pricing.headingSpan }} {{ . }} {{ end }}</span></h2>
-                <div class="border"></div>
+        <div class="row ">
+            <div class="col-lg-12">
+                {{"<!-- section title -->" | safeHTML}}
+                <div class="title text-center wow fadeInDown" data-wow-duration="500ms">
+                    <h2> {{ with .Site.Data.pricing.heading }} {{ . }} {{ end }} <span class="color">{{ with .Site.Data.pricing.headingSpan }} {{ . }} {{ end }}</span></h2>
+                    <div class="border"></div>
+                </div>
+                {{"<!-- /section title -->" | safeHTML}}
             </div>
-            {{"<!-- /section title -->" | safeHTML}}
+        </div>
+
+        <div class="row">
 
             {{ range .Site.Data.pricing.pricingTable }}
             {{"<!-- single pricing table -->" | safeHTML}}
